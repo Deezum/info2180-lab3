@@ -1,5 +1,6 @@
-window.onload= function() {
-    var boardlayout = document.getElementById('board').boardlayout;
-    boardlayout.setAttribute("class", "square");
-
+window.onload = function(){
+    var layout = document.getElementById("board").getElementsByTagName("div");
+    for (const box of layout){
+        box.className ="square";
+    };
 }
